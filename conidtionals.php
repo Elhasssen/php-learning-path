@@ -67,20 +67,20 @@
 // if we have more that one operators it is cleaneer 
 // to use a switch 
 
-$fav_color = 'black';
+// $fav_color = 'black';
 
-switch($fav_color){
-    case 'red':
-        echo 'your favourite color is red ';
-        break;
-    case 'blue' :
-        echo 'your favourite color is blue';
-        break;
-    case 'green':
-        echo 'your favourite color is green';
-        break;
-    default:
-        echo 'your favourite color is not red, green, blue';
-}
+// switch($fav_color){
+//     case 'red':
+//         echo 'your favourite color is red ';
+//         break;
+//     case 'blue' :
+//         echo 'your favourite color is blue';
+//         break;
+//     case 'green':
+//         echo 'your favourite color is green';
+//         break;
+//     default:
+//         echo 'your favourite color is not red, green, blue';
+// }
 
 ?>
