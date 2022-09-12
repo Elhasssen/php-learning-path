@@ -19,7 +19,7 @@
 
 <!-- // in case of fetching from a database -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,6 +28,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> <?php  echo 'varibale one '?></h1>
+    <h1> <?php  // echo 'varibale one '?></h1>
 </body>
-</html>
+</html> -->
+
