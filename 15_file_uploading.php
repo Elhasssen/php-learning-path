@@ -1,9 +1,21 @@
 <?php
 if (isset($_POST['submit'])) {
+    $allowed_text = array('png','jpg', 'jpeg', 'gif');
     if (!empty($_FILES['upload']['name']))
     {
-        print_r($_FILES);
         $file_name = $_FILES['upload']['name'];
+        $file_tmp = $_FILES['upload']['tmp_name'];
+        $targer_dir = "uploads/${file_name}";
+        // get file text
+        $file_ext = explode('.',$file_name);
+        $file_ext = strtolower(end($file_ext));
+        // validate the image file
+        if (in_array($file_ext, $allowed_text)){
+            move_uploaded_file($file_tmp,$targer_dir);
+            $message = '<p style= "color : green;"> Success</p>';
+        } else {
+            $message = '<p style= "color : red;"> Invalid file type </p>';
+        }
         
     } else {
         $message = '<p style= "color : red;"> please chosoe afile </p>';
